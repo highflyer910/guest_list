@@ -45,20 +45,19 @@
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-              Attending ({{guestName.length}})
+              Attending ({{guestName.length}} / {{eventCapacity}})
               <br>
-              <progress></progress>
+              <progress :style="{width: eventCapacityPercentage + '%'}"></progress>
             </div>
             <div class="card-block">
               <div v-if="guestName.length > 0">
                 <div class="card-success rounded name-box"
                    v-for="name in guestName">
-                   {{name.toLowerCase() + ' is awesome!'}}
+                   {{name.toLowerCase()}}
                 </div>
               </div>
               <div v-else>
                 <h4>No names added yet...</h4>
-                {{guestName}}
               </div>
             </div>
           </div>
