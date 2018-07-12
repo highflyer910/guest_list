@@ -24,7 +24,7 @@
       <div class="row" :style="appStyles">
         <div class="col-sm-12">
           <div class="card">
-            <div class="card-header" :class="formSubmitClass">
+            <div class="card-header">
               {{event.eventDate}}
             </div>
             <div class="card-block">
@@ -34,7 +34,7 @@
 
               <form class="form-inline" @submit.prevent="formSubmitted">
                 <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Name" v-model="newNameText">
-                <input type="submit" :class="formSubmitClass" class="btn btn-primary"></input>
+                <input type="submit" class="btn btn-primary"></input>
               </form>
             </div>
           </div>
