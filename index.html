@@ -16,19 +16,20 @@
     <div id="navigation">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1>{{appName}}</h1>
+          <h1 @click="changeTitle" ref="name">Guest List</h1>
           <hr>
         </div>
 
         <div>
           <ul class="nav">
-            <template v-for="navLink in navLinks">
+            <div v-for="navLink in navLinks" :key="navLink.id">
               <li class="nav-item"><a class="nav-link" :href="navLink.url">{{navLink.name}}</a></li>
-            </template>
+            </div>
           </ul>
         </div>
       </div>
       <hr>
+      <button @click="capacityChanged">Change capacity</button>
     </div>
 
   <div id="app">
