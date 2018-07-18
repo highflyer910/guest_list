@@ -55,3 +55,4 @@ var vm2 = new Vue({
 	}
 })
 
+vm3.$mount('#navigation')
