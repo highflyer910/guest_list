@@ -39,10 +39,10 @@ var vm2 = new Vue({
 	data: {
 		appName: 'Guest List',
 		navLinks: [
-		  {name: "Home", id: 1, url: "https://www.google.com"},
-		  {name: "Upcoming Events", id: 2, url: "https://www.amazon.com"},
-		  {name: "Guest Benefits", id: 3, url: "https://www.twitter.com"},
-		  {name: "Latest News", id: 4, url: "https://www.facebook.com"}
+		  {name: "Home", id: 1, url: ""},
+		  {name: "Upcoming Events", id: 2, url: ""},
+		  {name: "Guest Benefits", id: 3, url: ""},
+		  {name: "Latest News", id: 4, url: ""}
 		]
 	},
 	methods: {
